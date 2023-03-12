@@ -1,0 +1,64 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.tikTok {
+  @include section;
+  @include flex(column, flex-start, center, nowrap);
+  gap: 30px;
+  border: none;
+
+  &-firstBlock {
+    @include flex(row, space-between, center, nowrap);
+    gap: 30px;
+    background-color: $transparent-black-color;
+    padding: 10px;
+    border-radius: $r10;
+    &-list {
+      @include flex(column, flex-start, flex-start, nowrap);
+      gap: 15px;
+      p,
+      a {
+        @include font(normal, 400, 20px, 1.55, 0.1px);
+        color: $ivory-color;
+      }
+      a {
+        text-decoration: underline;
+        &:hover {
+          color: $ivory-dark-color;
+        }
+      }
+    }
+    &__img {
+      width: 460px;
+      height: 223.5px;
+    }
+  }
+  &-secondBlock {
+    background-color: $transparent-black-color;
+    padding: 10px;
+    border-radius: $r10;
+    @include font(normal, 600, 30px, 1.23, 0.1px);
+    text-align: center;
+    p {
+      color: $ivory-color;
+    }
+  }
+  &-thirdBlock {
+    @include flex(column, flex-start, center, nowrap);
+    gap: 10px;
+    background-color: $transparent-black-color;
+    padding: 10px;
+    border-radius: $r10;
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    span {
+      @include font(normal, 600, 30px, 1.23, 0.1px);
+      color: $ivory-color;
+    }
+  }
+}

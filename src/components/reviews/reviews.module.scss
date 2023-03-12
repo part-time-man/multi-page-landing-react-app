@@ -1,0 +1,13 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.reviews {
+  @include section;
+  @include flex(column, flex-start, center, nowrap);
+  gap: 20px;
+  &__title {
+    @include font(normal, 600, 42px, 1.23, 0.1px);
+    color: $ivory-color;
+  }
+
+}

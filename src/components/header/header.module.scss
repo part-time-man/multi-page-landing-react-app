@@ -1,0 +1,33 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.header {
+  background-color: $transparent-black-color;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.container {
+  @include container;
+  padding-block: 20px;
+}
+
+.nav {
+  padding: 0;
+  &-list {
+    @include flex(row, space-between, center, nowrap);
+
+    &-item {
+
+      &__link {
+        color: $ivory-color;
+        @include font(normal, 700, 20px, 10px, 0.1px);
+        text-transform: uppercase;
+        &:hover {
+            color: $ivory-dark-color;
+        }
+      }
+    }
+  }
+}

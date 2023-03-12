@@ -1,0 +1,12 @@
+@import "./styles/abstracts/mixins";
+
+.app {
+  @include flex(column, flex-start, center, nowrap);
+  background-image: url("https://magic-exist.com/images/tild3334-6439-4261-b862-626166653461__manbeende_black_taro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}

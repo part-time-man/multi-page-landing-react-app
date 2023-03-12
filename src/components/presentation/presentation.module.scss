@@ -1,0 +1,48 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.presentation {
+  @include flex(row, center, center, nowrap);
+  gap: 40px;
+  @include section;
+
+  &-first {
+    @include flex(column, center, center, nowrap);
+    gap: 40px;
+    background-color: $transparent-black-color;
+    padding-block: 35px;
+    border-radius: $r10;
+    padding-inline: 5px;
+
+    &-titles {
+      @include flex(column, space-between, center, nowrap);
+      gap: 15px;
+
+      h1,
+      h2,
+      p {
+        @include font(normal, 400, 39px, 60px, 0.1px);
+        color: $ivory-color;
+        text-transform: uppercase;
+      }
+      p {
+        @include font(normal, 400, 22px, 34px, 0.1px);
+      }
+    }
+
+    &-buttons {
+      @include flex(row, space-between, center, nowrap);
+      gap: 100px;
+
+      a {
+        @include button;
+      }
+    }
+  }
+
+  &__img {
+    border-radius: $r10;
+    width: 300px;
+    height: 400px;
+  }
+}

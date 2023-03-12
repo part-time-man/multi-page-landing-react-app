@@ -1,0 +1,73 @@
+@import "../../styles/abstracts/mixins";
+@import "../../styles/abstracts/variables";
+
+.rituals {
+  @include flex(column, flex-start, center, nowrap);
+  gap: 30px;
+  @include section;
+
+  &__text {
+    @include font(normal, 400, 20px, 1.55, 0.1px);
+    color: $ivory-color;
+    text-align: center;
+  }
+
+  &__title {
+    @include font(normal, 600, 42px, 1.23, 0.1px);
+    color: $ivory-color;
+
+  }
+
+  &-list {
+    @include flex(row, center, flex-start, wrap);
+    gap: 50px;
+
+    &-item {
+      max-width: 320px;
+      padding: 20px 10px;
+      border-radius: $r10;
+      @include flex(column, flex-start, center, nowrap);
+      gap: 15px;
+      background-color: $transparent-black-color;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        transform: scale(1.05);
+        background-color: $less-transparent-black-color;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      button {
+        @include button;
+      }
+      span {
+        @include font(normal, 500, 17px, 1.15, 0.1px);
+        color: $ivory-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.popup-block {
+  @include flex(row, space-between, stretch, nowrap);
+  gap: 30px;
+  cursor: auto;
+  img {
+    width: 360px;
+    height: 360px;
+  }
+  h3 {
+    @include font(normal, 600, 24px, 1.35, 0.1px);
+    color: $ivory-color;
+    padding-bottom: 10px;
+  }
+  span {
+    color: $ivory-color;
+    @include font(normal, 400, 14px, 1.55, 0.1px);
+    padding-bottom: 5px;
+  }
+}

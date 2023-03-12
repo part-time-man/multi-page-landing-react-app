@@ -1,0 +1,43 @@
+@import './variables';
+
+@mixin flex($flex-direction, $justify-content, $align-items, $flex-wrap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin font($font-style, $font-weight, $font-size, $line-height, $letter-spacing) {
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin container {
+  max-width: 1240px;
+  padding-inline: 20px;
+  margin: 0 auto;
+}
+
+@mixin section {
+  border-bottom: 1px solid rgba(196, 193, 193, 0.4);
+  padding-block: 35px;
+}
+
+@mixin button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: rgb(78, 75, 87);
+  border-radius: $r20;
+  background-color: $ivory-color;
+  @include font(normal, 400, 16px, 1.55, 0.1px);
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: $ivory-dark-color;
+  }
+}
