@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/multi-page-landing-react-app/static/css/main.3fc8da55.css",
-    "main.js": "/multi-page-landing-react-app/static/js/main.5736d8af.js",
+    "main.css": "/multi-page-landing-react-app/static/css/main.24ad5bdf.css",
+    "main.js": "/multi-page-landing-react-app/static/js/main.ca27e93c.js",
     "static/media/r9.png": "/multi-page-landing-react-app/static/media/r9.adf90c1976b9e6295bbf.png",
     "static/media/r8.png": "/multi-page-landing-react-app/static/media/r8.91f8cf0cbe72d7aae091.png",
     "static/media/r6.png": "/multi-page-landing-react-app/static/media/r6.4c718fecf603da08da81.png",
@@ -20,11 +20,11 @@
     "static/media/aboutMe_3.jpeg": "/multi-page-landing-react-app/static/media/aboutMe_3.979cce967d3a1bb7b53c.jpeg",
     "static/media/aboutMe_4.jpeg": "/multi-page-landing-react-app/static/media/aboutMe_4.12d6c2715c32ce824d2e.jpeg",
     "index.html": "/multi-page-landing-react-app/index.html",
-    "main.3fc8da55.css.map": "/multi-page-landing-react-app/static/css/main.3fc8da55.css.map",
-    "main.5736d8af.js.map": "/multi-page-landing-react-app/static/js/main.5736d8af.js.map"
+    "main.24ad5bdf.css.map": "/multi-page-landing-react-app/static/css/main.24ad5bdf.css.map",
+    "main.ca27e93c.js.map": "/multi-page-landing-react-app/static/js/main.ca27e93c.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fc8da55.css",
-    "static/js/main.5736d8af.js"
+    "static/css/main.24ad5bdf.css",
+    "static/js/main.ca27e93c.js"
   ]
 }
