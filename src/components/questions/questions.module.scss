@@ -6,8 +6,7 @@
   @include flex(column, flex-start, center, nowrap);
   gap: 20px;
   &__title {
-    @include font(normal, 600, 42px, 1.23, 0.1px);
-    color: $ivory-color;
+    @include title;
   }
 
   &-list {
@@ -17,6 +16,7 @@
     background-color: $transparent-black-color;
     padding: 0 15px 25px 15px;
     border-radius: $r10;
+
     &-item {
       border-bottom: 1px solid white;
       padding-block: 15px;
@@ -24,19 +24,41 @@
 
       &__text {
         display: block;
-        transition: max-height ease-in-out 0.7s;
+        transition: all 0.7s;
         overflow: hidden;
         span {
           display: block;
           color: $ivory-color;
           @include font(normal, 400, 18px, 1.55, 0.1px);
           padding-block: 5px;
+          @media (width < 1024px) {
+          @include font(normal, 400, 16px, 1.35, 0.1px);
+            
+          }
         }
       }
+
       &__title {
         @include font(normal, 600, 24px, 1.35, 0.1px);
         color: $ivory-color;
+        @media screen {
+          @include font(normal, 600, 20px, 1.35, 0.1px);
+        }
       }
+
+      &-buttonsBlock {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        padding: 5px;
+        border-radius: $r10;
+        @include flex(row, space-between, center, nowrap);
+        margin-block: 5px;
+
+        &:hover {
+          background-color: $transparent-black-color;
+        }
+      }
+
       &__button,
       &__button--open {
         @include flex(row, center, center, nowrap);
@@ -48,18 +70,12 @@
         width: 40px;
         font-size: xx-large;
         transition: all 0.1s ease;
-        &:hover {
-          background-color: $transparent-black-color;
-        }
       }
+
       &__button--open {
         transform: rotate(45deg);
       }
 
-      div {
-        @include flex(row, space-between, center, nowrap);
-        margin-block: 15px;
-      }
     }
   }
 }

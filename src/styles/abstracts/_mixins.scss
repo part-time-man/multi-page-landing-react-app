@@ -18,8 +18,11 @@
 
 @mixin container {
   max-width: 1240px;
-  padding-inline: 20px;
+  padding-inline: 70px;
   margin: 0 auto;
+  @media (width < 768px) {
+    padding-inline: 10px;
+  }
 }
 
 @mixin section {
@@ -39,5 +42,17 @@
   cursor: pointer;
   &:hover {
     background-color: $ivory-dark-color;
+  }
+  @media (width < 768px) {
+  @include font(normal, 400, 12px, 1.15, 0.1px);
+    
+  }
+}
+
+@mixin title {
+  @include font(normal, 600, 42px, 1.23, 0.1px);
+  color: $ivory-color;
+  @media (width < 768px) {
+    @include font(normal, 600, 30px, 1.23, 0.1px);
   }
 }

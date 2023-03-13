@@ -1,5 +1,3 @@
-import React from "react";
-
 import aboutMe_1 from "../../assets/imgs/main/aboutMe_1.jpeg";
 import aboutMe_2 from "../../assets/imgs/main/aboutMe_2.jpeg";
 import aboutMe_3 from "../../assets/imgs/main/aboutMe_3.jpeg";
@@ -25,7 +23,7 @@ export const AboutMe = () => {
   }
 
   return (
-    <section className={classes.aboutMe} id='about_me'>
+    <section className={classes.aboutMe} id="about_me">
       <h2 className={classes.aboutMe__title}>O mnie</h2>
       <ul className={classes["aboutMe-list"]}>
         {dataArr.map((item, index) => (
@@ -35,7 +33,9 @@ export const AboutMe = () => {
           </li>
         ))}
       </ul>
-      <a href="#" className={classes.aboutMe__link}>Napisz do mnie!</a>
+      <a href="#contacts" className={classes.aboutMe__link}>
+        Napisz do mnie!
+      </a>
     </section>
   );
 };

@@ -5,11 +5,12 @@
   @include flex(row, center, center, nowrap);
   gap: 40px;
   @include section;
+  background-color: $transparent-black-color;
 
   &-first {
     @include flex(column, center, center, nowrap);
     gap: 40px;
-    background-color: $transparent-black-color;
+    
     padding-block: 35px;
     border-radius: $r10;
     padding-inline: 5px;
@@ -24,9 +25,16 @@
         @include font(normal, 400, 39px, 60px, 0.1px);
         color: $ivory-color;
         text-transform: uppercase;
+        text-align: center;
+        @media (width < 768px) {
+          @include font(normal, 400, 25px, 39px, 0.1px);
+        }
       }
       p {
         @include font(normal, 400, 22px, 34px, 0.1px);
+        @media (width < 768px) {
+          @include font(normal, 400, 16px, 25px, 0.1px);
+        }
       }
     }
 
@@ -37,12 +45,28 @@
       a {
         @include button;
       }
+      @media (width < 768px) {
+        @include flex(column, flex-start, center, nowrap);
+        gap: 10px;
+
+      }
+    }
+    @media (width < 768px) {
+      gap: 10px;
+      padding-bottom: 10px;
     }
   }
 
   &__img {
     border-radius: $r10;
-    width: 300px;
+    width: 280px;
     height: 400px;
   }
+
+  @media (width < 1024px) {
+    @include flex(column, center, center, nowrap);
+    gap: 10px;
+  }
+
+
 }

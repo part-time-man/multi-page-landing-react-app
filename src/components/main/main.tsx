@@ -1,12 +1,9 @@
-import React from "react";
-
 import { Presentation } from "../presentation";
 import { AboutMe } from "../aboutMe";
-import { Rituals } from '../rituals';
-import { Reviews } from '../reviews';
+import { Rituals } from "../rituals";
+import { Reviews } from "../reviews";
 import { Questions } from "../questions";
-import { TikTok } from '../tikTok/';
-
+import { Contacts } from "../contacts";
 
 import classes from "./main.module.scss";
 
@@ -19,7 +16,7 @@ export const Main = () => {
         <Rituals />
         <Reviews />
         <Questions />
-        <TikTok />
+        <Contacts />
       </div>
     </main>
   );

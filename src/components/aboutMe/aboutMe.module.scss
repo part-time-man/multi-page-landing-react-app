@@ -7,8 +7,7 @@
   @include section;
 
   &__title {
-    @include font(normal, 600, 42px, 1.23, 0.1px);
-    color: $ivory-color;
+    @include title;
   }
   &-list {
     @include flex(column, center, center, nowrap);
@@ -20,31 +19,47 @@
       padding-block: 15px;
       border-radius: $r10;
       img {
-        width: 400px;
-        height: 533px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: $r10;
       }
       p {
         @include font(normal, 400, 20px, 1.55, 0.1px);
         color: $ivory-color;
+        text-align: center;
+        @media (width < 768px) {
+          @include font(normal, 400, 18px, 1.45, 0.1px);
+        }
+      }
+      @media (width < 768px) {
+        max-width: 360px;
+      }
+      @media (width < 425px) {
+        max-width: 260px;
       }
     }
     &__item:nth-child(odd) {
       align-self: flex-start;
       border-right: 1px solid $ivory-color;
-
       padding-right: 25px;
-      margin-left: 150px;
       padding-left: 25px;
+      margin-left: 10%;
+      @media (width < 768px) {
+        align-self: center;
+        margin: 0;
+      }
     }
     &__item:nth-child(even) {
       padding-left: 25px;
       align-self: flex-end;
       border-left: 1px solid $ivory-color;
-
-      margin-right: 150px;
       padding-right: 25px;
+      margin-right: 10%;
+      @media (width < 768px) {
+        align-self: center;
+        margin: 0;
+      }
     }
   }
 

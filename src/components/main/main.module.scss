@@ -4,8 +4,11 @@
 .main {
   @include flex(column, flex-start, center, nowrap);
   padding-top: 90px;
+  z-index: 1;
+
 }
 
 .container {
   @include container;
+  padding-inline: 70px;
 }

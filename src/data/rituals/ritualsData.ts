@@ -8,13 +8,13 @@ import r7 from "../../assets/imgs/rituals/r7.png";
 import r8 from "../../assets/imgs/rituals/r8.png";
 import r9 from "../../assets/imgs/rituals/r9.png";
 
-export type Rituals = {
+export type RitualsTYPE = {
   img: string;
   title: string;
   text: string;
 };
 
-export const rutualsData: Rituals[] = [
+export const rutualsData: RitualsTYPE[] = [
   {
     img: r1,
     title: 'Zaklęcie miłosne "Moja bratnia dusza"',
